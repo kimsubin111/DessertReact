@@ -2,14 +2,14 @@
     width: 1160px;
     margin: 0 auto;
 }
-.desc {
+.hero .desc {
     font-family: "GMarketSans";
     width: 100%;
     position: absolute;
     left: 0;
-    top: 8%;
+    top: 20%;
 }
-.desc span {
+.hero .desc span {
     display: inline-block;
     background-color: #fff;
     padding: 1px 14px 2px 14px;
@@ -17,13 +17,13 @@
     border-radius: 30px;
     margin-bottom: 20px;
 }
-.desc h3 {
+.hero .desc h3 {
     color: #fff;
     font-size: 100px;
     font-weight: 300;
     line-height: 1;
 }
-.desc p {
+.hero .desc p {
     font-size: 22px;
     font-weight: 300;
     color: #fff;
@@ -31,16 +31,16 @@
     line-height: 1.35;
     margin-bottom: 70px;
 }
-.desc .btn {
+.hero .desc .btn {
 }
-.desc .btn a {
+.hero .desc .btn a {
     display: inline-block;
     padding: 11px 50px;
     background-color: #fff;
     margin-right: 10px;
     transition: all 0.3s;
 }
-.desc .btn a:hover {
+.hero .desc .btn a:hover {
     background-color: #e18d4a;
 }
 

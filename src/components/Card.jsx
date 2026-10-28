@@ -1,17 +1,26 @@
 import React from "react";
 import { cardData } from "../data/cardData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Card = () => {
+const Card = ({ title }) => {
+    AOS.init();
+
     return (
         <section id="cardType" className="section">
-            <h2>카페, 그 이상의 문화를 만들다</h2>
+            <h2>{title}</h2>
             <p>
-                투썸플레이스는 프리미엄 커피 & 디저트 카페의 리딩 브랜드로서 디저트 카페 문화의 차별화된 제품과 서비스를
-                선보일 것입니다.
+                투썸플레이스는 프리미엄 커피 & 디저트 카페의 리딩 브랜드로서 디저트 카페 문화의
+                차별화된 제품과 서비스를 선보일 것입니다.
             </p>
             <div className="container card_inner">
                 {cardData.map((card, index) => (
-                    <div className="card">
+                    <div
+                        className="card"
+                        key={index}
+                        data-aos="flip-left"
+                        data-aos-delay={index * 400}
+                    >
                         <figure>
                             <img src={card.img} alt={card.alt} />
                         </figure>
