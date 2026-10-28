@@ -1,0 +1,124 @@
+/* common */
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.section > span {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+/*  textType*/
+.text_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.txt {
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+.txt:hover {
+    background-color: #dfdfdf;
+}
+.text_title {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 한줄 생략 삼총사 */
+
+    position: relative;
+    padding-top: 75px;
+}
+.text_desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #666;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.text_btn {
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #666;
+}
+
+/* 아이콘 */
+.text_title::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../../img/icon.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+.t1 .text_title::before {
+    background-position: 0 0;
+}
+.t2 .text_title::before {
+    background-position: -60px 0;
+}
+.t3 .text_title::before {
+    background-position: -120px 0;
+}
+.t4 .text_title::before {
+    background-position: -180px 0;
+}
+
+.t5 .text_title::before {
+    background-position: -240px 0;
+}
+
+.t6 .text_title::before {
+    background-position: -300px 0;
+}
+
+.t1:hover .text_title::before {
+    background-position: 0 -60px;
+}
+.t2:hover .text_title::before {
+    background-position: -60px -60px;
+}
+.t3:hover .text_title::before {
+    background-position: -120px -60px;
+}
+.t4:hover .text_title::before {
+    background-position: -180px -60px;
+}
+.t5:hover .text_title::before {
+    background-position: -240px -60px;
+}
+.t6:hover .text_title::before {
+    background-position: -300px -60px;
+}

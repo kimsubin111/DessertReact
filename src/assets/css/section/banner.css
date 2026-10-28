@@ -1,0 +1,51 @@
+/* common */
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* bannerType */
+.banner_inner {
+    height: 485px;
+    background-image: url(../../img/bannerImg.png);
+    padding: 110px 0 0 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+}
+
+.banner_inner .title {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.banner_inner .desc {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.banner_inner .desc a {
+    display: block;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.banner_inner .desc .small {
+    text-decoration: underline;
+}
